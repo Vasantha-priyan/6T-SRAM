@@ -153,6 +153,5 @@ If you have any questions, suggestions, or need help understanding this project 
 
 **⭐ If you found this project helpful, please consider giving it a star!**
 
-*Made with ❤️ by Vasanthapriyan P — B.E. VLSI Design and Technology*
 
 </div>
