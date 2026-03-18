@@ -21,26 +21,26 @@ This project focuses on the **6-Transistor (6T) SRAM cell** — the most widely 
 ## 🔁 Read & Write Operations
 
 ### ✍️ Write '0'
-- WL = HIGH → M5, M6 turn ON
-- BL = 0V, BL' = VDD
-- Node Q pulled to 0, QB pulled to VDD
-- **Cell stores: Q = 0, QB = 1**
+ WL = HIGH → M5, M6 turn ON
+ BL = 0V, BL' = VDD
+ Node Q pulled to 0, QB pulled to VDD
+ **Cell stores: Q = 0, QB = 1**
 
 ### ✍️ Write '1'
-- WL = HIGH → M5, M6 turn ON
-- BL = VDD, BL' = 0V
-- Node Q pulled to VDD, QB pulled to 0
-- **Cell stores: Q = 1, QB = 0**
+ WL = HIGH → M5, M6 turn ON
+ BL = VDD, BL' = 0V
+ Node Q pulled to VDD, QB pulled to 0
+ **Cell stores: Q = 1, QB = 0**
 
 ### 📖 Read '0'
-- WL = HIGH, BL and BL' pre-charged to VDD
-- Q = 0 → discharges BL slightly (small ΔV)
-- Sense Amplifier detects ΔV → reads **'0'**
+ WL = HIGH, BL and BL' pre-charged to VDD
+ Q = 0 → discharges BL slightly (small ΔV)
+ Sense Amplifier detects ΔV → reads **'0'**
 
 ### 📖 Read '1'
-- WL = HIGH, BL and BL' pre-charged to VDD
-- QB = 0 → discharges BL' slightly (small ΔV)
-- Sense Amplifier detects ΔV on BL' → reads **'1'**
+ WL = HIGH, BL and BL' pre-charged to VDD
+ QB = 0 → discharges BL' slightly (small ΔV)
+ Sense Amplifier detects ΔV on BL' → reads **'1'**
 
 ---
 
@@ -122,16 +122,16 @@ This project focuses on the **6-Transistor (6T) SRAM cell** — the most widely 
 ### Power Reduction
 $$P_{dynamic} = \alpha \cdot C_{load} \cdot V_{DD}^2 \cdot f$$
 
-- 🔹 **Minimized WL pulse width** → reduced switching activity (α ↓)
-- 🔹 **Partial bitline swing** → BL never fully discharges → less charge movement
-- 🔹 **Smaller transistor W** where full drive strength not needed → C ↓
+ 🔹 **Minimized WL pulse width** → reduced switching activity (α ↓)
+ 🔹 **Partial bitline swing** → BL never fully discharges → less charge movement
+ 🔹 **Smaller transistor W** where full drive strength not needed → C ↓
 
 ### Delay Reduction
 $$t_{delay} = \frac{C \cdot \Delta V}{I_{drive}}$$
 
-- 🔹 **Higher W/L for drive transistors** → higher ID → faster node discharge
-- 🔹 **Compact layout** → shorter wire lengths → lower parasitic capacitance
-- 🔹 **Post-layout simulation** with extracted parasitics to verify real-world performance
+ 🔹 **Higher W/L for drive transistors** → higher ID → faster node discharge
+ 🔹 **Compact layout** → shorter wire lengths → lower parasitic capacitance
+ 🔹 **Post-layout simulation** with extracted parasitics to verify real-world performance
 
 ---
 
@@ -141,9 +141,9 @@ $$t_{delay} = \frac{C \cdot \Delta V}{I_{drive}}$$
 
 If you have any questions, suggestions, or need help understanding this project — feel free to reach out!
 
-- 🐙 **GitHub:** [@Vasantha-priyan](https://github.com/Vasantha-priyan)
-- **Portfolio:** [Portfolio](https://vasanthapriyan-dev.web.app/)
-- 📩 **Open an Issue:** [Click here](../../issues)
+ 🐙 **GitHub:** [@Vasantha-priyan](https://github.com/Vasantha-priyan)
+ **Portfolio:** [Portfolio](https://vasanthapriyan-dev.web.app/)
+ 📩 **Open an Issue:** [Click here](../../issues)
 
 > 💡 Feel free to fork this repository, explore the simulations, and build on top of this work!
 
